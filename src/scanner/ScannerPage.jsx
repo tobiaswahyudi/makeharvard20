@@ -8,12 +8,12 @@ import "../base.css"
 import './ScannerPage.css'
 import UnlockedModal from '../modals/UnlockedModal';
 
-const ScannerPage = () => {
+const ScannerPage = ({setPage}) => {
     const [scanned, setScanned] = useState(false);
 
     return (
         <div className="scanner-page-container">
-            <ScannerHeader />
+            <ScannerHeader setPage={setPage}/>
             <img src={lightscan} className="lightscan" alt="light scan" />
             <img src={viewfinder} className="viewfinder" alt="view finder" />
             <Scanner setScanned={setScanned} />
