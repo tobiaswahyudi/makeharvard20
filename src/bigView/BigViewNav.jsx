@@ -7,19 +7,19 @@ const BottomNavChoice = ({ tabNumber, content, tab, setTab }) => {
     return (
         <button className='bottom-nav-choice-button' onClick={() => setTab(tabNumber)}>
             <div className={`bottom-nav-choice ${tabNumber === tab ? 'selected' : ''}`}>
-                <h3 className='bottom-nav-choice-text'>{content}</h3>
-                <hr className='bottom-nav-choice-line' />
+                <span className='bottom-nav-choice-text'>{content}</span>
+                <hr className={`bottom-nav-choice-line ${tabNumber === tab ? '' : 'd-none'}`} />
             </div>
         </button>
     )
 }
 
-const BigViewNav = ({ tab, setTab }) => {
+const BigViewNav = ({ setPage, tab, setTab }) => {
     return (
         <div className='big-view-nav nav'>
             <div className='top-nav-container'>
                 <span className='nav-title'>Profile</span>
-                <button className='nav-button-scanner'>
+                <button className='nav-button-scanner' onClick={() => setPage(0)}>
                     <img src={scan} alt="scan" />
                 </button>
             </div>

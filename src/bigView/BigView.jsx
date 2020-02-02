@@ -4,12 +4,12 @@ import AccountPage from './account/AccountPage';
 import KeysPage from './keys/KeysPage';
 import HistoryPage from './history/HistoryPage';
 
-const BigView = () => {
+const BigView = ({setPage}) => {
     const [tab, setTab] = useState(1);
 
     return (
         <div className='bigView container'>
-            <BigViewNav tab={tab} setTab={setTab} />
+            <BigViewNav setPage={setPage} tab={tab} setTab={setTab} />
             {tab === 0 && <AccountPage />}
             {tab === 1 && <KeysPage />}
             {tab === 2 && <HistoryPage />}

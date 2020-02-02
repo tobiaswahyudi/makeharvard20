@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <link rel="manifest" href="/manifest.json"></link>
       {page === 0 && <ScannerPage setPage={setPage} />}
-      {page === 1 && <BigView />}
+      {page === 1 && <BigView setPage={setPage} />}
     </div>
   );
 }

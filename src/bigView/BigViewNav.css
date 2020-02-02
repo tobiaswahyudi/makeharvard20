@@ -11,12 +11,13 @@
     color: white;
     padding-top: 8vh;
     padding-left: 6vw;
+    display: flex;
 }
 
 .nav-button-scanner {
     display: inline;
-    position: fixed;
-    right: 3vw;
+    position: absolute;
+    right: 5vw;
     padding: 2.5vw;
     background-color: #5359EF;
     border-radius: 15px;
@@ -25,7 +26,7 @@
 
 .nav-button-scanner img{
     width: 5vw;
-    height: auto;
+    height: 5vw;
 }
 
 .nav-title {
@@ -33,4 +34,29 @@
     font-family: 'San Fransisco Display', sans-serif;
     font-weight: 600;
     font-size: 36px;
+}
+
+.bottom-nav-container {
+    margin-top: 30px;
+    padding-left: 6vw;
+}
+
+.bottom-nav-choice-button {
+    background: none;
+    border: none;
+    margin-right: 10vw;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom-nav-choice-line {
+    margin-bottom: 0;
+    margin-top: 4px;
+    border: 1.5px solid #3F44C9;
+    width: 10vw;
+}
+
+.d-none {
+    border-color: black;
 }
