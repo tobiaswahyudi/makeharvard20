@@ -9,9 +9,30 @@
 .top-nav-container {
     width: 100vw;
     color: white;
+    padding-top: 8vh;
+    padding-left: 6vw;
 }
 
 .nav-button-scanner {
-    /* float: right; */
-    display: inline-block;
+    display: inline;
+    position: fixed;
+    right: 3vw;
+    padding: 2.5vw;
+    background-color: #5359EF;
+    border-radius: 15px;
+    border: none;
 }
+
+.nav-button-scanner img{
+    width: 5vw;
+    height: auto;
+}
+
+.nav-title {
+    display: inline;
+    font-family: 'San Fransisco Display', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.bottom-nav-

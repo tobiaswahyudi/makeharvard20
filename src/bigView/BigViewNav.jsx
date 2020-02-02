@@ -1,5 +1,7 @@
 import React from 'react';
-import './BigViewNav.css'
+import './BigViewNav.css';
+
+import scan from '../img/scan.png';
 
 const BottomNavChoice = ({ tabNumber, content, tab, setTab }) => {
     return (
@@ -16,9 +18,9 @@ const BigViewNav = ({ tab, setTab }) => {
     return (
         <div className='big-view-nav nav'>
             <div className='top-nav-container'>
-                <h2>Profile</h2>
+                <span className='nav-title'>Profile</span>
                 <button className='nav-button-scanner'>
-                    img
+                    <img src={scan} alt="scan" />
                 </button>
             </div>
             <div className='bottom-nav-container'>

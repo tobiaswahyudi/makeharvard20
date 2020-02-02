@@ -6,7 +6,7 @@ import './Scanner.css'
 
 const Scanner = ({setScanned}) => {
     const [scannedCode, setScannedCode] = useState('');
-
+    //var xhr = new XMLHttpRequest()
     const handleScan = (data) => {
         if (data) {
             setScannedCode(data)

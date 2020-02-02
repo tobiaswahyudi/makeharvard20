@@ -17,7 +17,7 @@
 
 @keyframes scan {
     from {
-        top: -10vh;
+        top: -20vh;
     } to {
         top: 80vh;
     }
@@ -38,5 +38,5 @@
     width: 66vw;
     height: auto;
     left: 17vw;
-    top: 25vh
+    top: 20vh
 }
