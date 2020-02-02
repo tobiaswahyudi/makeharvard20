@@ -4,8 +4,27 @@
     src: url("./fonts/SF-Pro-Text-Regular.otf");
 }
 
+
 @font-face {
     font-family: "San Francisco";
     font-weight: 500;
+    src: url("./fonts/SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
     src: url("./fonts/SF-Pro-Text-Semibold.otf");
+}
+
+@font-face {
+    font-family: "San Francisco Display";
+    font-weight: 400;
+    src: url("./fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: "San Francisco Display";
+    font-weight: 500;
+    src: url("./fonts/SF-Pro-Display-Medium.otf");
 }

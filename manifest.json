@@ -18,5 +18,6 @@
     "orientation": "portrait",
     "display": "fullscreen",
     "scope": "/",
-    "theme_color": "#5359EF"
+    "theme_color": "#5359EF",
+    "prefer_related_applications": false
   }
