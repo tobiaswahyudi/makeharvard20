@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("./fonts/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("./fonts/SF-Pro-Text-Semibold.otf");
+}
