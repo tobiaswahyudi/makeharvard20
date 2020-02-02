@@ -1,10 +1,15 @@
+.scanner-nav-overflow {
+    height: 0vh;
+    overflow: visible;
+}
+
 .scanner-nav {
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
+    overflow: visible;
     padding-top: 7vh;
     box-sizing: border-box;
-    background-color: black;
-    z-index: 100;
+    background-color: none;
     box-shadow: 0 3px 8px 3px #00000066;
 }
 
@@ -12,13 +17,22 @@
     display: inline;
     position: fixed;
     left: 8vw;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+.scanner-nav-back img {
+    width: 24px;
+    height: auto;
 }
 
 .scanner-nav-title {
     display: inline;
-    left: 45vw;
+    left: 40vw;
     position: fixed;
     color: white;
     font-family: 'San Fransisco', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 100;
 }

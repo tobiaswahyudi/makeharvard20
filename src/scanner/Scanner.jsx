@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import QrReader from 'react-qr-reader';
 
+import './Scanner.css'
+
 const Scanner = () => {
     const [scannedCode, setScannedCode] = useState('');
     // const [requestedMedia, setRequestedMedia] = useState(false)
@@ -23,7 +25,7 @@ const Scanner = () => {
     }
 
     return (
-        <div style={{width: '70vh'}}>
+        <div className='scanner-camera-container'>
             <QrReader
                 delay={300}
                 onError={handleError}

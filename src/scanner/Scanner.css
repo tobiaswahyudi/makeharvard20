@@ -1,0 +1,11 @@
+.scanner-camera-container {
+    display: block;
+    position: fixed;
+    width: 150vw;
+    left: -25vw;
+    z-index: 0;
+}
+
+section div {
+    display: none;
+}

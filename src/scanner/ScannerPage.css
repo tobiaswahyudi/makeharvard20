@@ -1,0 +1,42 @@
+.scanner-page-container {
+    overflow: hidden;
+}
+
+.scanner-bottom-vignette {
+    position: fixed;
+    bottom: 0;
+    height: 42vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 27.08%);
+    box-sizing: border-box;
+    padding-top: 20vh;
+    color: white;
+    font-weight: 600;
+    z-index: 100;
+}
+
+@keyframes scan {
+    from {
+        top: -20vh;
+    } to {
+        top: 80vh;
+    }
+}
+
+.lightscan {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 90;
+    left: 0;
+    animation: scan 4s linear infinite;
+}
+
+.viewfinder {
+    position: absolute;
+    z-index: 100;
+    width: 66vw;
+    height: auto;
+    left: 17vw;
+    top: 25vh
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Scanner from './scanner/Scanner';
+import ScannerPage from './scanner/ScannerPage';
 
 const App = () => {
   return (
     <div className="App">
-      <Scanner />
+      <ScannerPage />
     </div>
   );
 }
