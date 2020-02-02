@@ -1,0 +1,17 @@
+.big-view-nav {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.top-nav-container {
+    width: 100vw;
+    color: white;
+}
+
+.nav-button-scanner {
+    /* float: right; */
+    display: inline-block;
+}

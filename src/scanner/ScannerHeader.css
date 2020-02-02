@@ -1,0 +1,22 @@
+.scanner-nav {
+    width: 100vw;
+    height: 15vh;
+    padding-top: 7vh;
+    box-sizing: border-box;
+    background-color: black;
+    z-index: 100;
+    box-shadow: 0 3px 8px 3px #00000066;
+}
+
+.scanner-nav-back {
+    display: inline;
+    position: fixed;
+    left: 8vw;
+}
+
+.scanner-nav-title {
+    display: inline;
+    left: 45vw;
+    position: fixed;
+    color: white;
+}

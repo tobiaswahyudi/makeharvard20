@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import QrReader from 'react-qr-reader';
 
 const Scanner = () => {
     const [scannedCode, setScannedCode] = useState('');
-    const [requestedMedia, setRequestedMedia] = useState(false)
+    // const [requestedMedia, setRequestedMedia] = useState(false)
 
-    useEffect(() => {
+    /*useEffect(() => {
         console.log(navigator, navigator && navigator.getUserMedia)
         if(!requestedMedia && navigator && navigator.getUserMedia) {
             navigator.getUserMedia({ video: true }, () => setRequestedMedia(true), err => console.error(err))
         }
-    })
+    })*/
 
     const handleScan = (data) => {
         console.log("try", data)
@@ -23,7 +23,7 @@ const Scanner = () => {
     }
 
     return (
-        <div style={{width: '50vw'}}>
+        <div style={{width: '70vh'}}>
             <QrReader
                 delay={300}
                 onError={handleError}
