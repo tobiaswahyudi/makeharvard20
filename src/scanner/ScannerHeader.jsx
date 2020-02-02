@@ -8,8 +8,8 @@ const ScannerHeader = ({ setPage }) => {
     return (
         <div className="scanner-nav-overflow">
             <div className="scanner-nav">
-                <button className="scanner-nav-back">
-                    <img src={backChevron} alt="back" onPress={() => setPage(1)} />
+                <button className="scanner-nav-back" onClick={() => setPage(1)}>
+                    <img src={backChevron} alt="back" />
                 </button>
                 <span className="scanner-nav-title">QR Scan</span>
             </div>

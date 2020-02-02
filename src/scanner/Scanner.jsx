@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import QrReader from 'react-qr-reader';
+import axios from 'axios';
 
 import './Scanner.css'
 
@@ -10,6 +11,16 @@ const Scanner = ({setScanned}) => {
         if (data) {
             setScannedCode(data)
             setScanned(true)
+            axios.post(
+                'https://qrentry-makeharvard-2020.appspot.com/gate',
+                {},
+                {
+                    headers: {
+                        email: 'bruh1@math.harvard.edu',
+                        gateID: 420
+                    }
+                }
+            )
         }
     }
 
