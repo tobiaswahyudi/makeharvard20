@@ -17,7 +17,7 @@
 
 @keyframes scan {
     from {
-        top: -20vh;
+        top: -10vh;
     } to {
         top: 80vh;
     }
@@ -27,7 +27,7 @@
     position: absolute;
     width: 100vw;
     height: auto;
-    z-index: 90;
+    z-index: 80;
     left: 0;
     animation: scan 4s linear infinite;
 }

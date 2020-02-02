@@ -1,0 +1,15 @@
+.background-blur {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px);
+    background-color: #00000011;
+    z-index: 200;
+    position: absolute;
+}
+
+.background-blur div {
+    z-index: 300;
+    position: absolute;
+}

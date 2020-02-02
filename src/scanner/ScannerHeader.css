@@ -1,6 +1,8 @@
 .scanner-nav-overflow {
-    height: 0vh;
+    height: 0;
     overflow: visible;
+    /* background-color: black; */
+    z-index: 99;
 }
 
 .scanner-nav {
@@ -9,8 +11,8 @@
     overflow: visible;
     padding-top: 7vh;
     box-sizing: border-box;
-    background-color: none;
     box-shadow: 0 3px 8px 3px #00000066;
+    z-index: 99;
 }
 
 .scanner-nav-back {

@@ -3,7 +3,7 @@ import QrReader from 'react-qr-reader';
 
 import './Scanner.css'
 
-const Scanner = () => {
+const Scanner = ({setScanned}) => {
     const [scannedCode, setScannedCode] = useState('');
     // const [requestedMedia, setRequestedMedia] = useState(false)
 
@@ -18,6 +18,7 @@ const Scanner = () => {
         console.log("try", data)
         if (data) {
             setScannedCode(data)
+            setScanned(true)
         }
     }
     const handleError = (err) => {
