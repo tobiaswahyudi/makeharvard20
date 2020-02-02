@@ -12,12 +12,12 @@ const Scanner = ({setScanned}) => {
             setScannedCode(data)
             setScanned(true)
             axios.post(
-                'https://qrentry-makeharvard-2020.appspot.com/gate',
+                'https://cors-anywhere.herokuapp.com/https://qrentry-makeharvard-2020.appspot.com/gate',
                 {},
                 {
                     headers: {
                         email: 'bruh1@math.harvard.edu',
-                        gateID: 420
+                        gateID: 420,
                     }
                 }
             )
